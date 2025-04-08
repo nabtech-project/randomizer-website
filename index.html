@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Random team generator for fun games. Create teams with ease!">
+    <meta name="keywords" content="team generator, randomizer, team maker, game">
+    <meta name="author" content="Your Name">
+    <title>Random Team Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Random Team Generator</h1>
+    </header>
+
+    <div class="container">
+        <div class="input-section">
+            <label for="personInput">Enter persons (comma separated):</label>
+            <textarea id="personInput" placeholder="Person 1, Person 2, Person 3, Person 4..."></textarea>
+
+            <label for="teamSize">Team Size:</label>
+            <input type="number" id="teamSize" min="1" max="10" value="2">
+
+            <button onclick="generateTeams()">Generate Teams</button>
+        </div>
+
+        <div id="teamResult" class="result-section">
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Random Team Generator</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
